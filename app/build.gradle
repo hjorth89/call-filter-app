@@ -1,0 +1,61 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services' // Required for Firebase services
+}
+
+android {
+    compileSdkVersion 33
+
+    defaultConfig {
+        applicationId "com.ahdevelopment.callhandlingapp"
+        minSdkVersion 21
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+
+        // Enable Firebase Cloud Messaging
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    // AndroidX libraries
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+
+    // Firebase Cloud Messaging for notifications
+    implementation platform('com.google.firebase:firebase-bom:31.1.1')
+    implementation 'com.google.firebase:firebase-messaging'
+
+    // Google Play Billing for subscriptions
+    implementation 'com.android.billingclient:billing:5.0.0'
+
+    // Twilio SDK (if needed for future enhancements)
+    // Twilio’s Android SDK typically used in call handling within Twilio Client, but if not needed, you can skip it here
+
+    // Optional for Firebase Crashlytics (error reporting)
+    implementation 'com.google.firebase:firebase-crashlytics'
+
+    // OpenAI API integration (note: OpenAI is server-side, so this is for reference only)
+    // Retrofit or other networking libraries would be used if interacting with a server
+
+    // Misc
+    implementation 'com.google.android.material:material:1.5.0'
+
+    // MultiDex support (if needed for larger apps with multiple dependencies)
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    // OkHttp for networking (if needed)
+    implementation 'com.squareup.okhttp3:okhttp:4.9.3'
+}
+
+// Apply the Google services plugin (Firebase) at the bottom
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,26 @@
+<resources>
+    <!-- App Name -->
+    <string name="app_name">AI Call Assistant</string>
+
+    <!-- Main Activity -->
+    <string name="subscription_status">Subscription Status</string>
+    <string name="setup_forwarding">Set Up Call Forwarding</string>
+    <string name="view_summary">View Call Summary</string>
+    <string name="settings">Settings</string
+    <string name="subscription_required">Subscription required</string>
+    <string name="subscribe_to_access">Please subscribe to access the app features.</string>
+    <string name="subscription_activated">Subscription activated!</string>
+    <string name="subscription_failed">Subscription failed.</string>
+
+    <!-- Settings Activity -->
+    <string name="business_keywords_hint">Business Keywords</string>
+    <string name="language">Language</string>
+    <string name="save">Save</string
+
+    <!-- Summary Activity -->
+    <string name="call_summary">Call Summary</string>
+
+    <!-- Language Options -->
+    <string name="language_english">English</string>
+    <string name="language_danish">Danish</string>
+</resources>

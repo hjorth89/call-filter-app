@@ -1,0 +1,9 @@
+<LinearLayout ... >
+    <TextView android:text="Subscription Status" />
+    <Switch android:id="@+id/subscriptionSwitch" />
+
+    <Button android:id="@+id/setupForwardingButton" android:text="Set Up Call Forwarding" />
+    <Button android:id="@+id/removeForwardingInstructions" android:text="Remove Call Forwarding" />
+    <Button android:id="@+id/viewSummaryButton" android:text="View Call Summary" />
+    <Button android:id="@+id/settingsButton" android:text="Settings" />
+</LinearLayout>

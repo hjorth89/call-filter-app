@@ -1,0 +1,3 @@
+<LinearLayout ... >
+    <RecyclerView android:id="@+id/recyclerView" ... />
+</LinearLayout>

@@ -1,0 +1,5 @@
+<LinearLayout ... >
+    <EditText android:id="@+id/businessKeywordsEditText" android:hint="Business Keywords" />
+    <Spinner android:id="@+id/languageSpinner" />
+    <Button android:id="@+id/saveSettingsButton" android:text="Save" />
+</LinearLayout>
